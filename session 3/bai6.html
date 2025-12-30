@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký hội viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+        .form-container {
+            max-width: 700px;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        .form-group label {
+            width: 250px; /* Độ rộng nhãn lớn hơn để phù hợp với văn bản dài */
+            padding-top: 4px;
+            flex-shrink: 0;
+            font-size: 15px;
+        }
+        /* Các ô nhập liệu */
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: 320px;
+            padding: 4px;
+            border: 1px solid #767676;
+            border-radius: 2px;
+            box-sizing: border-box;
+        }
+        /* Dropdown vai trò (rộng hơn theo ảnh) */
+        .role-select {
+            width: 400px !important;
+        }
+        .form-group textarea {
+            height: 60px;
+            resize: vertical;
+        }
+        /* Nhóm tùy chọn (Radio & Checkbox) */
+        .options-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            padding-top: 4px;
+        }
+        .options-group label {
+            width: auto;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+        .btn-submit {
+            margin-top: 15px;
+            padding: 3px 12px;
+            background-color: #efefef;
+            border: 1px solid #767676;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-submit:hover {
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label>Họ và tên:</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Ngày sinh:</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính:</label>
+            <div class="options-group">
+                <label><input type="radio" name="gender"> Nam</label>
+                <label><input type="radio" name="gender"> Nữ</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Số điện thoại:</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email">
+        </div>
+
+        <div class="form-group">
+            <label>Tên công ty:</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Vai trò trong công ty:</label>
+            <select class="role-select">
+                <option>Giám đốc điều hành (CEO)</option>
+                <option>Quản lý dự án</option>
+                <option>Trưởng phòng</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Quy mô công ty:</label>
+            <select>
+                <option>Doanh nghiệp nhỏ</option>
+                <option>Doanh nghiệp vừa</option>
+                <option>Tập đoàn lớn</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Ngành nghề công ty:</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Lý do tham gia câu lạc bộ:</label>
+            <textarea></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Kinh nghiệm lãnh đạo:</label>
+            <textarea></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Mục tiêu khi tham gia câu lạc bộ:</label>
+            <textarea></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Chương trình sự kiện mong muốn tham gia:</label>
+            <div class="options-group">
+                <label><input type="checkbox"> Networking</label>
+                <label><input type="checkbox"> Workshops</label>
+                <label><input type="checkbox"> Hội thảo</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Đăng ký nhận bản tin:</label>
+            <div class="options-group">
+                <label><input type="checkbox"> Có</label>
+            </div>
+        </div>
+
+        <button class="btn-submit">Đăng ký hội viên</button>
+    </div>
+
+</body>
+</html>
