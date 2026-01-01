@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #000;
+}
+
+header {
+    background-color: #0081c2;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 4px 0 0 0;
+    font-style: italic;
+    font-size: 14px;
+}
+
+main {
+    padding: 15px 25px;
+}
+
+h2 {
+    color: #0081c2;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    border: none; /* Đảm bảo không có gạch phân cách */
+}
+
+p {
+    margin: 8px 0;
+}
+
+.cyan-italic {
+    color: #00bcd4;
+    font-style: italic;
+}
+
+.tooth-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.tooth-list li::before {
+    content: "🦷";
+    margin-right: 10px;
+}
+
+.red-italic {
+    color: #ff0000;
+    font-style: italic;
+}
+
+.bold-link {
+    color: #0000ee;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0081c2;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+}

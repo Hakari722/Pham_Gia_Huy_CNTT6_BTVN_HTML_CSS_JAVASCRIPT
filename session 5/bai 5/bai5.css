@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center; 
+}
+
+.tieu-de {
+    color: #3399ff; 
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.nhom-nhap {
+    text-align: left; 
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #99ccff; 
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.khung-nut {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nut-gui {
+    background-color: #00bcd4; 
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid black;   
+    outline: 2px solid #00bcd4; 
+    cursor: pointer;
+    font-size: 16px;
+}

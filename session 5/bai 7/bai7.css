@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-justify { text-align: justify; }
+.line-spacing { line-height: 1.8; }
+
+.tieu-de-xanh, .tieu-de-xanh-nho {
+    color: #1e90ff;
+}
+
+.vung-bac-si {
+    padding: 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.vung-bac-si:hover {
+    background-color: #e6f7ff;
+}
+
+.vung-bac-si img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.duong-ke {
+    width: 60%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 30px auto;
+}
+
+.co-so-1 { color: red; font-weight: bold; }
+.co-so-2 { font-style: italic; }
+.co-so-3 { text-decoration: underline; }
+.co-so-4 { font-weight: bold; }
