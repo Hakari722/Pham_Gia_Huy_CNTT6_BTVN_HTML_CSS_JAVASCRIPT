@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(228, 244, 240);
+}
+.menu a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+.menu a:hover {
+    background-color: rgb(30, 137, 137);
+}
+line{
+   padding: 8px;
+}
+.green{
+    color:  rgb(30, 168, 101);
+    background-color: rgb(175, 232, 232);
+}
+.blue{
+    color:blue;
+    background-color: rgb(60, 180, 180);
+}
+.line1{
+    background-color: white;
+}   
+.line2{
+   background-color: white;
+}
+.line2 li:hover{
+    background-color: rgb(128, 243, 230);
+}
+.line3 {
+    background-color: rgb(37, 164, 122);
+    color: white;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
