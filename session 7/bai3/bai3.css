@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.card{
+    width: 800px;
+    border:1px solid #000;
+    margin: 50px auto;
+}
+.title{
+    color:#ff6600;
+    padding:10px;
+}
+.doctor-image{
+    width:100%;
+    display:block;
+}
+.card-body{
+    padding:15px;
+}
+.specialty{
+    margin: 5px 0;
+    color: rgb(41, 186, 41);
+}

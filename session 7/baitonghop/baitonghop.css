@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background-color: #0d3b85;
+    color: white;
+    padding: 80px 0;
+}
+
+.badge {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero .description {
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+
+.btn:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    width: 160px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    cursor: pointer;
+}
+
+.stat-box h3 {
+    font-size: 24px;
+}
+
+.stat-box p {
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+
+.stat-box:hover {
+    transform: translateY(-10px); 
+    background: rgba(255, 255, 255, 0.15); 
+    border-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services {
+    padding: 60px 0;
+}
+
+.service-card {
+    border: 1px solid #eef2f6;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    position: relative;
+    transition: all 0.3s ease; 
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}

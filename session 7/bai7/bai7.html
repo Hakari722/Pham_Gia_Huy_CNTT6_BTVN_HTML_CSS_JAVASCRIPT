@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu Feedback Nha Khoa</title>
+    <link rel="stylesheet" href="bai7.css">
+</head>
+<body>
+
+    <div class="feedback-form">
+        <h1>Biểu mẫu Feedback Phòng Khám Nha Khoa</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" placeholder="Nhập họ tên">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Dịch vụ đã sử dụng</label>
+                <select id="service">
+                    <option>Khám răng tổng quát</option>
+                    <option>Tẩy trắng răng</option>
+                    <option>Niềng răng</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction">Mức độ hài lòng</label>
+                <select id="satisfaction">
+                    <option>Rất hài lòng</option>
+                    <option>Hài lòng</option>
+                    <option>Chưa hài lòng</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Nội dung phản hồi</label>
+                <textarea id="message" rows="5" placeholder="Hãy cho chúng tôi biết cảm nhận của bạn..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Gửi feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>

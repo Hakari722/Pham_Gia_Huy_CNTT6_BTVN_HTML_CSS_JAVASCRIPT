@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner-list{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    background-color: #b8def5;
+}
+
+.banner{
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: white; 
+    border-radius: 10px;
+}
+
+.banner h3{
+    color: aqua;
+}

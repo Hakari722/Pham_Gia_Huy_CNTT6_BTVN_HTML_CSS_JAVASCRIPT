@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #fde68a;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1{
+    color: #92400e;
+    margin-bottom: 8px;
+}
+
+header p{
+    color: #78350f;
+}
+
+.menu{
+    width: 100%;
+    background-color: #FED7AA;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.menu a{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #92400e;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+    background-color: rgb(192, 52, 52);
+    color: white;
+    border-radius: 6px;
+}
+
+.doctors{
+    background-color: #fff7ed;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.doctors h2{
+    color: #b45309;
+    margin-bottom: 40px;
+}
+
+.doctor-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.doctor-card{
+    background-color: white;
+    width: 250px;
+    padding: 25px 15px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease;
+}
+
+.doctor-card:hover{
+    transform: translateY(-8px);
+}
+
+.doctor-card img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3{
+    color: #92400e;
+    margin-bottom: 6px;
+}
+
+.doctor-card p{
+    color: #b45309;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.doctor-card span{
+    font-size: 13px;
+    color: #555;
+}
+
+footer{
+    background-color: #78350f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: auto;
+}

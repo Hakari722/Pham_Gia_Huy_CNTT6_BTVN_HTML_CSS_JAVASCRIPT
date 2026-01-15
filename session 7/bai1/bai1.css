@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.box{
+    width:100%;
+    border:1px solid #000;
+    text-align:center;
+}
+
+.banner{
+    height:80px;
+    background:#2ff7f7;
+    line-height:80px;
+    font-weight:bold;
+}
+
+p{
+    margin:10px 0;
+    font-style:italic;
+}

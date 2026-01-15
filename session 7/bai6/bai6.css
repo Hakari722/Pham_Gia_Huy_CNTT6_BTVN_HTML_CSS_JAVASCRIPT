@@ -1,0 +1,83 @@
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.treatment-card {
+    background-color: white;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef2f6;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+.status-badge {
+    background-color: #fff3e0;
+    color: #f39c12;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-body p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.label {
+    color: #888;
+}
+
+.card-body i {
+    margin: 0 5px;
+    color: #777;
+}
+
+.progress-title {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+    color: #333;
+}
+
+.progress-container {
+    background-color: #eee;
+    height: 10px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background-color: #00ff00; 
+    height: 100%;
+    width: 75%; 
+}
+
+.dates {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
+}
