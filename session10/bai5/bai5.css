@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f2ed;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(#1a1a1a, #111);
+    padding: 15px 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+header ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header ul li a:hover {
+    color: #fff;
+}
+
+.hero {
+    height: 420px;
+    background: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("a90e60c0f63b6eb12e37b1db209a7028f01ae037.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.gallery {
+    max-width: 1100px;
+    margin: -60px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.gallery-item span {
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.gallery-item.large {
+    grid-column: span 2;
+}
+
+.reservation {
+    background: #8b0000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reservation h2 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.reservation form {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.reservation input,
+.reservation select {
+    width: calc(33.333% - 10px);
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+}
+
+.reservation button {
+    background: #fff;
+    color: #8b0000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.reservation button:hover {
+    background: #f1f1f1;
+}
+
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item.large {
+        grid-column: span 2;
+    }
+
+    .reservation input,
+    .reservation select {
+        width: 100%;
+    }
+}

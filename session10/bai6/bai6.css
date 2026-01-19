@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+header {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #1e90ff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+nav a {
+    color: #ddd;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.hero {
+    height: 420px;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("bda3e7d064464cd7f2c9fc4b4ee5de38890ed225.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.hero button {
+    background: #f1c40f;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #d4ac0d;
+}
+
+.featured {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.featured h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background: #f1c40f;
+    margin: 0 auto 40px;
+}
+
+.dish-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; 
+}
+
+.dish {
+    flex: 1 1 220px;      
+    max-width: 220px;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.dish img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dish:hover {
+    transform: translateY(-6px);
+}
+
+.about {
+    background: #1c1c1c;
+    color: #ccc;
+    text-align: center;
+    padding: 60px 80px;
+}
+
+.about h2 {
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+footer {
+    background: #111;
+    color: #777;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .dish {
+        flex: 1 1 200px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none; 
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .dish {
+        flex: 1 1 45%; 
+        max-width: 45%;
+    }
+
+    .about {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dish {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    .hero {
+        height: 360px;
+    }
+}
